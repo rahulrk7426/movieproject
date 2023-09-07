@@ -1,0 +1,7 @@
+{% load static %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <input type="submit">
+</form>
